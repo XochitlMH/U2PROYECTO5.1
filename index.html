@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro- Mi web</title>
+</head>
+<style>
+    body{background: rgba(0, 255, 255, 0.541);
+        margin:0
+    }
+    .form{
+        width:340px;
+        height: 900px;
+        background:#eed9eb;
+        border-radius:8px;
+        box-shadow:0 0 40px -10px #000;
+        margin:calc(50vh - 220px) auto;
+        padding:20px 30px;
+        max-width:calc(100vw - 40px);
+        box-sizing:border-box;
+        font-family:Impact, 'Haettenschweiler';
+        position:relative
+    }
+    h2{
+        margin:10px 0;
+        padding-bottom:10px;
+        width:180px;
+        color:#070707;
+        border-bottom:3px solid #cf53aa
+    }
+    input{
+        width:100%;
+        padding:10px;
+        box-sizing:border-box;
+        background:none;
+        outline:#000;
+        resize:none;
+        border:0;
+        font-family:Verdana, Tahoma;
+        transition:all .3s;
+        border-bottom:2px solid #bebebe
+    }
+    input:focus{
+        border-bottom:2px solid #729520
+    }
+    p:before{
+        content:attr(type);
+        display:block;
+        margin:28px 0 0;font-size:16px;
+        color:#000;
+    }
+    button{
+        float:right;
+        padding:8px 12px;
+        margin:8px 0 0;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow';
+        border:2px solid #3104fc;
+        background:0;color:#f01010;
+        cursor:pointer;
+        transition:all .3s;
+        border-radius: 15px;
+    }
+    button:hover{
+        background: hotpink;
+        color:#fff
+    }
+    div{
+        content:'Hi';
+        position:absolute;
+        bottom:-15px;right:-20px;
+        background:#6e9cc7;
+        color:#080808;
+        width:320px;
+        padding:16px 4px 16px 0;
+        border-radius:6px;
+        font-size:13px;
+        box-shadow:10px 10px 40px -14px #ffffff
+    }
+    span{
+        margin:0 5px 0 15px
+    }
+    
+    </style>
+      </head>
+      <body>
+        <form action="" method="get" class="form">
+            <h2>Contactanos!!!</h2>
+            <p type="Nombre:"><input maxlength="50" placeholder="Escribe tu nombre aquí....."></input></p>
+            <p type="Apellidos:"><input maxlength="50" placeholder="Escribe tus Apellidos aquí....."></input></p>
+            <p type="Sexo"> 
+            <input type="radio" name="Genero" value="Maculino" checked> Masculino </p>
+            <input type="radio" name="Genero" value="Femenino"> Femenino <br>
+            
+            <p>Poblaci&oacute;n</p>
+                <select name="Poblaci&on">
+                    <option value="Poblaci&on"> Poblaci&oacute;n </option>
+                   <option value="Orizaba"> Orizaba </option>
+                   <option value="Cordoba"> Cordoba </option> 
+                   <option value="Xalapa"> Xalapa </option>
+                   <option value="Veracruz"> Veracruz </option>
+                </select>
+                
+            <br>
+                <input type="checkbox" checked name="Op1" value="Deseo escribir informacion sobre novedades y ofertas.">
+            Deseo recibir informacion sobre novedades y ofertas.<br> 
+            <!-- <input maxlength="50" placeholder="Escribe la infromaci&oacute;n....."></input> -->
+            <p type="Email:"><input placeholder="Email para que te contactemos.."></input></p>
+            <p type="Mensaje:"><input placeholder="Que deseas saber..."></input></p>
+            <input type="checkbox" name="Op1" value="Declaracion">
+            Declaro haber le&iacute;do y aceptar las condiciones generales del programa y la normativa sabre proteccion de datos <br>
+            <br>
+            <!-- <input type="checkbox" checked name="Op1" value="Deseo escribir informacion sobre novedades y ofertas.">
+            Deseo recibir informacion sobre novedades y ofertas.<br> -->
+            <button class="button" >Enviar</button>
+            <div>
+              <span ></span>1593574682
+              <span ></span> xochitl@gmail.com
+            </div>
+          </form>
+      </body>
+
+</html>
